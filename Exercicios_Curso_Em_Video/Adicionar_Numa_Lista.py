@@ -1,14 +1,16 @@
 lista = []
-while True:
-    valor = int(input("Adicione um valor: "))
-    if len(lista) < 1:
-        lista.append(valor)
-    elif len(lista) > 1:
-        for i, e in enumerate(lista):
-            if valor > e:
-                lista.insert(i, valor) 
-            opcao = str(input("Continuar?. "))
-            if opcao != "s":
+
+for v in range(0, 5):
+    item = int(input('adicionar valor: '))
+    if v == 0 or item > lista[-1]:
+        lista.append(item)
+        print("adicionou no final da lista")
+    else:
+        pos = 0
+        while pos < len(lista):
+            if item <= lista[pos]:
+                lista.insert(pos, item)
+                print(f'adicionou o {item} na posicao {pos}')
                 break
+            pos += 1
 print(lista)
-    
