@@ -12,7 +12,7 @@ tupla = ("Lápis", 1.75,
          "Livros", 130.90)
 
 for i in range(len(tupla)):
-    if i % 2 == 0:
+    if i % 2 == 0:    
         print(f"{tupla[i]:.<30}", "R$ ", end="")
     else:
         print(f"{tupla[i]:>6.2f}")

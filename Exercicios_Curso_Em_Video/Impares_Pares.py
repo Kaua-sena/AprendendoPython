@@ -1,4 +1,5 @@
 
+
 lista = [[], []]
 valores = []
 for n in range(1, 8):
