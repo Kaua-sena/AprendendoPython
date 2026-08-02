@@ -4,12 +4,13 @@ class ContaBancaria:
         self.nome = titular
         self.saldo = saldo
         
-    def Depositar(self, valor):
+    def Depositar(self, valor): # Depositar saldo a conta.
         if valor > self.saldo:
             print("Deposito NEGADO saldo insuficiente.")
         else:
             self.saldo += valor
-    def Sacar(self, valor):
+            
+    def Sacar(self, valor): # Sacar saldo da conta.
         self.saldo -= valor
         print("Saque autorizado SEM EXITO.")
         
